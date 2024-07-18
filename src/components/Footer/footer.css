@@ -1,0 +1,146 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+}
+
+.footer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.2fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.footer-container .sec h2 {
+    text-align: start;
+    position: relative;
+   color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-container .sec p {
+    text-align: start;
+    color: rgb(180, 180, 180);
+}
+
+.footer-container .sec p:hover {
+    
+}
+
+.footer-container .sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4.5px);
+}
+
+.footer-container .sci li {
+    list-style: none;
+}
+
+.footer-container .sci li a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: var(--gray-gradient);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer-container .sci li a i {
+    color: white;
+    font-size: 21px;
+}
+
+.footer-container .section-about .logo {
+    width: 100%;
+    display: flex;
+}
+
+.footer-container .section-about .logo img {
+    width: 300px;
+    margin-left: -15px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.footer-container .section-quicklinks {
+    position: relative;
+    text-align: start;
+}
+
+.footer-container .section-quicklinks ul li {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.footer-container .section-quicklinks ul li a {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-container .section-quicklinks ul li a:hover {
+    background: var(--blue-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.footer-container .section-contact .info {
+    position: relative;
+}
+
+.footer-container .section-contact .info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+    margin-left: -40px;
+}
+
+.footer-container .section-contact .info li span {
+    color: rgb(180, 180, 180);
+    font-size: 20px;
+}
+
+.footer-container .section-contact .info li a {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+.footer-container .section-contact .info li a:hover {
+    background: var(--blue-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+    .footer-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 40px;
+    }
+    .footer-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }
+}

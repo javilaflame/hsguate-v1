@@ -1,0 +1,46 @@
+.about-us {
+    padding-top: 50px;
+    width: 86%;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    background: var(--blue-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 55px;
+    position: relative;
+}
+
+.about-left {
+    color: rgb(160, 160, 160);
+    text-align: start;
+    font-size: 18px;
+    width: 50%;
+    margin-top: 25px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media (max-width:1080px) {
+    .about-container {
+        display: block;
+    }
+
+    .about-left {
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .about-right img {
+        width: 75%;
+    }
+}

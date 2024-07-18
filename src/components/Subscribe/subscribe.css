@@ -1,0 +1,104 @@
+.subscribe {
+    width: 87%;
+    height: 200px;
+    background: var(--blue-gradient);
+    background-size: 200% 200%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.subscribe .left h2 {
+    color: var(--main-blue);
+    font-size: 40px;
+    text-align: start;
+}
+
+.subscribe .left p {
+    color: rgb(0, 2, 32);
+    font-size: 18px;
+    width: 500px;
+    text-align: start;
+}
+
+.subscribe .right .form-box {
+    padding: 10px;
+    border-radius: 5px;
+    background: #ececec;
+    box-shadow: rgba(46, 133, 240, 0.4) 5px 5px, rgba(46, 146, 240, 0.3) 10px 10px, rgba(46, 179, 240, 0.2) 15px 15px, rgba(46, 240, 227, 0.1) 20px 20px, rgba(46, 217, 240, 0.05) 25px 25px;
+}
+
+.subscribe .right input {
+    font-size: 18px;
+    color: black;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    background: #ececec;
+    font-family: 'poppins';
+}
+
+.subscribe .right button {
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: var(--main-blue);
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width:1080px) {
+    .subscribe {
+        display: block;
+        height: auto;
+        padding: 25px;
+    }
+
+    .subscribe .left {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .subscribe .left h2, .subscribe .left p {
+        text-align: center;
+        width: 100%;
+    }
+    .subscribe .right {
+        margin-top: 25px;
+    }
+    .subscribe .right .form-box {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .subscribe .right input {
+        width: 100%;
+        text-align: center;
+    }
+
+    .subscribe .right button {
+
+    }
+}

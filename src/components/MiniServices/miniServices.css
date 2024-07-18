@@ -1,0 +1,46 @@
+.hero-bottom {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+}
+
+.hero-services {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero-services-l i {
+    color: white;
+    font-size: 55px;
+    cursor: pointer;
+}
+
+.hero-services-r .title {
+    font-size: 30px;
+    text-align: start;
+    font-weight: 600;
+}
+
+.hero-services-r .text {
+    width: 300px;
+}
+
+@media (max-width: 1235px) {
+    .hero-bottom {
+        display: inline-block;
+        width: 90%;
+    }
+    .hero-services {
+        width: 100%;
+        justify-content: center;
+    }    
+    .hero-bottom .fa-headset {
+        font-size: 45px;
+    }
+    .hero-services-l i {
+        font-size: 35px;
+    }
+}

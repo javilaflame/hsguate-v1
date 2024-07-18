@@ -1,0 +1,146 @@
+.container {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.service-wrapper {
+    padding: 5% 8%;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service h1 {
+    background: var(--blue-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 55px;
+    position: relative;
+}
+
+.service h1::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 80%;
+    border-radius: 8px;
+    background: #0d0050;
+}
+
+.service h1 span {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: var(--blue-gradient);
+    z-index: 10;
+    animation: anim 5s linear infinite;
+}
+
+@keyframes anim {
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: 88%;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.card {
+    height: 350px;
+    width: 370px;
+    background: #0a0048;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    transition: all .6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -200px;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: white;
+    height: 18px;
+    filter: blur(30px);
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.card:hover:after {
+    width: 225%;
+    top: -100%;
+}
+
+.card i {
+    background: var(--blue-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.card h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.card p {
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+    color: rgb(180, 180, 180);
+}
+
+.card:hover {
+    background: transparent;
+    transform: translateY(-8px);
+    border: 0.2px solid rgb(54, 208, 255);
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card {
+        width: 300px;
+        height: auto;
+    }
+}
